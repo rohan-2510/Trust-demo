@@ -1,0 +1,79 @@
+import React from 'react';
+import {
+    View, Text, StyleSheet, ScrollView, TouchableOpacity,
+} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { COLORS } from '../constants/theme';
+
+export default function GaushalaExpensesScreen({ navigation }) {
+    const expenses = [
+        { label: 'FOOD', value: 'XXXX/-' },
+        { label: 'Grass', value: 'XXXX/-' },
+        { label: 'Medicine', value: 'XXX/-' },
+        { label: 'Other', value: 'XX/-' },
+    ];
+
+    return (
+        <SafeAreaView style={styles.safe}>
+            <View style={styles.header}>
+                <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
+                    <Text style={styles.backText}>← Back</Text>
+                </TouchableOpacity>
+                <Text style={styles.headerTitle}>Goshala Expences</Text>
+            </View>
+
+            <ScrollView contentContainerStyle={styles.content}>
+                <View style={styles.card}>
+                    {expenses.map((item, idx) => (
+                        <View key={idx} style={styles.row}>
+                            <Text style={styles.expenseLabel}>{item.label}</Text>
+                            <Text style={styles.expenseValue}>= {item.value}</Text>
+                        </View>
+                    ))}
+                </View>
+            </ScrollView>
+        </SafeAreaView>
+    );
+}
+
+const styles = StyleSheet.create({
+    safe: { flex: 1, backgroundColor: '#fff' },
+    header: {
+        backgroundColor: COLORS.primary,
+        paddingVertical: 18,
+        paddingHorizontal: 16,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    backBtn: { marginRight: 10 },
+    backText: { color: '#fff', fontSize: 16, fontWeight: '600' },
+    headerTitle: {
+        color: '#fff',
+        fontSize: 20,
+        fontWeight: 'bold',
+        flex: 1,
+        textAlign: 'center',
+        marginRight: 40,
+    },
+    content: { padding: 20 },
+    card: {
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        padding: 20,
+        borderWidth: 1,
+        borderColor: '#ddd',
+        shadowColor: '#000',
+        shadowOpacity: 0.06,
+        shadowRadius: 4,
+        elevation: 2,
+    },
+    row: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingVertical: 12,
+        borderBottomWidth: 1,
+        borderColor: '#f0f0f0',
+    },
+    expenseLabel: { fontSize: 16, color: COLORS.text, fontWeight: '600' },
+    expenseValue: { fontSize: 16, color: COLORS.darkGray },
+});
