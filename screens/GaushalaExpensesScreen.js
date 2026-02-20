@@ -7,10 +7,10 @@ import { COLORS } from '../constants/theme';
 
 export default function GaushalaExpensesScreen({ navigation }) {
     const expenses = [
-        { label: 'FOOD', value: 'XXXX/-' },
-        { label: 'Grass', value: 'XXXX/-' },
-        { label: 'Medicine', value: 'XXX/-' },
-        { label: 'Other', value: 'XX/-' },
+        { label: 'FOOD', value: '10000' },
+        { label: 'Grass', value: '5000' },
+        { label: 'Medicine', value: '5000' },
+        { label: 'Other', value: '2000' },
     ];
 
     return (

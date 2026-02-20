@@ -14,9 +14,9 @@ export default function GaushalaScreen({ navigation }) {
 
             <ScrollView contentContainerStyle={styles.content}>
                 <View style={styles.statsBox}>
-                    <Text style={styles.statLine}>TOTAL INCOME = XXXX/-</Text>
+                    <Text style={styles.statLine}>TOTAL INCOME = 100000</Text>
                     <View style={styles.divider} />
-                    <Text style={styles.statLine}>TOTAL EXPENCE = XXX/-</Text>
+                    <Text style={styles.statLine}>TOTAL EXPENCE = 70000</Text>
                 </View>
 
                 <View style={styles.actionGrid}>

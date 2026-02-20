@@ -17,12 +17,12 @@ export default function RoomsScreen({ navigation }) {
                 <View style={styles.statsCard}>
                     <View style={styles.statRow}>
                         <Text style={styles.statLabel}>TOTAL INCOME</Text>
-                        <Text style={styles.statValue}>XXXX</Text>
+                        <Text style={styles.statValue}>100000</Text>
                     </View>
                     <View style={styles.divider} />
                     <View style={styles.statRow}>
                         <Text style={styles.statLabel}>TOTAL EXPENSE</Text>
-                        <Text style={styles.statValue}>XXXX</Text>
+                        <Text style={styles.statValue}>70000</Text>
                     </View>
                     <View style={styles.divider} />
                     <View style={styles.statRow}>

@@ -7,10 +7,10 @@ import { COLORS } from '../constants/theme';
 
 export default function GaushalaIncomeScreen({ navigation }) {
     const incomeItems = [
-        { label: 'Donations', value: 'XXXX/-' },
-        { label: 'Milk Sales', value: 'XXXX/-' },
-        { label: 'Govt. Grant', value: 'XXX/-' },
-        { label: 'Other', value: 'XX/-' },
+        { label: 'Donations', value: '100000' },
+        { label: 'Milk Sales', value: '10000' },
+        { label: 'Govt. Grant', value: '20000' },
+        { label: 'Other', value: '2000' },
     ];
 
     return (
