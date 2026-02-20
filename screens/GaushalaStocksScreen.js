@@ -20,7 +20,7 @@ export default function GaushalaStocksScreen({ navigation }) {
                 <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
                     <Text style={styles.backText}>← Back</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>GOSHALA STOCKS</Text>
+                <Text style={styles.headerTitle}>Gaushala Stocks</Text>
             </View>
 
             <ScrollView contentContainerStyle={styles.content}>

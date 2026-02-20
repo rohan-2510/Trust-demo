@@ -22,14 +22,6 @@ export default function DonationScreen() {
 
     return (
         <SafeAreaView style={styles.safe}>
-            {/* Nav bar */}
-            <View style={styles.navBar}>
-                {['About Trust', 'Projects', 'Gallery', 'Testimonial', 'Contact', 'Kshetra'].map((item) => (
-                    <TouchableOpacity key={item}>
-                        <Text style={styles.navItem}>{item}</Text>
-                    </TouchableOpacity>
-                ))}
-            </View>
 
             <ScrollView contentContainerStyle={styles.content}>
                 <Text style={styles.pageTitle}>Donation</Text>

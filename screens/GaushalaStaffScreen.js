@@ -20,7 +20,7 @@ export default function GaushalaStaffScreen({ navigation }) {
                 <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
                     <Text style={styles.backText}>← Back</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>GOSHALA STAFF</Text>
+                <Text style={styles.headerTitle}>Gaushala Staff</Text>
             </View>
 
             <ScrollView contentContainerStyle={styles.content}>

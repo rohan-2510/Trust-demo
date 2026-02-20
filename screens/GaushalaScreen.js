@@ -9,7 +9,7 @@ export default function GaushalaScreen({ navigation }) {
     return (
         <SafeAreaView style={styles.safe}>
             <View style={styles.header}>
-                <Text style={styles.headerTitle}>GOSHALA</Text>
+                <Text style={styles.headerTitle}>GAUSHALA</Text>
             </View>
 
             <ScrollView contentContainerStyle={styles.content}>

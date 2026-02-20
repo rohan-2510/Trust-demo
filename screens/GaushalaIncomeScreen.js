@@ -19,7 +19,7 @@ export default function GaushalaIncomeScreen({ navigation }) {
                 <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
                     <Text style={styles.backText}>← Back</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>GOSHALA INCOME</Text>
+                <Text style={styles.headerTitle}>Gaushala Income</Text>
             </View>
 
             <ScrollView contentContainerStyle={styles.content}>

@@ -10,7 +10,7 @@ export default function KitchenScreen() {
     return (
         <SafeAreaView style={styles.safe}>
             <View style={styles.header}>
-                <Text style={styles.title}>DASHBOARD KITCHEN</Text>
+                <Text style={styles.title}>KITCHEN</Text>
                 <TouchableOpacity style={styles.adminBadge}>
                     <Text style={styles.adminText}>ADMIN</Text>
                 </TouchableOpacity>

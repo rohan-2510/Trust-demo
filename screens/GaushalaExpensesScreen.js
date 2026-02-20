@@ -19,7 +19,7 @@ export default function GaushalaExpensesScreen({ navigation }) {
                 <TouchableOpacity style={styles.backBtn} onPress={() => navigation.goBack()}>
                     <Text style={styles.backText}>← Back</Text>
                 </TouchableOpacity>
-                <Text style={styles.headerTitle}>Goshala Expences</Text>
+                <Text style={styles.headerTitle}>Gaushala Expenses</Text>
             </View>
 
             <ScrollView contentContainerStyle={styles.content}>

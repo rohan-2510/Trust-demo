@@ -32,11 +32,9 @@ export default function DashboardScreen() {
                     <StatCard label="Monthly Expense" value="100" />
                 </View>
 
-                {/* Sub-dashboards */}
-                <Text style={styles.sectionTitle}>SECTION DASHBOARDS</Text>
 
                 <View style={styles.subCard}>
-                    <Text style={styles.subCardTitle}>DASHBOARD GAUSHALA</Text>
+                    <Text style={styles.subCardTitle}>GAUSHALA</Text>
                     <View style={styles.row}>
                         <StatCard label="Total Income" value="12000.00 RS" small />
                         <StatCard label="Today's Income" value="100" small />
@@ -60,7 +58,7 @@ export default function DashboardScreen() {
                 </View>
 
                 <View style={styles.subCard}>
-                    <Text style={styles.subCardTitle}>DASHBOARD KITCHEN</Text>
+                    <Text style={styles.subCardTitle}>KITCHEN</Text>
                     <View style={styles.row}>
                         <StatCard label="Total Income" value="12000.00 RS" small />
                         <StatCard label="Today's Income" value="100" small />
@@ -84,7 +82,7 @@ export default function DashboardScreen() {
                 </View>
 
                 <View style={styles.subCard}>
-                    <Text style={styles.subCardTitle}>DASHBOARD ROOMS</Text>
+                    <Text style={styles.subCardTitle}>ROOMS</Text>
                     <View style={styles.row}>
                         <StatCard label="Total Income" value="12000.00 RS" small />
                         <StatCard label="Today's Income" value="100" small />
